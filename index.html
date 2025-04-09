@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez NOVA ONE, le robot technologique révolutionnaire."
+    />
+    <meta
+      name="keywords"
+      content="NOVA ONE, robot, technologie, startup, IA, éducation, Afrique"
+    />
+    <meta name="author" content="Votre Nom" />
+    <title>NOVA ONE - Robot Technologique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #111a29;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2d3748;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#111A29] text-white font-sans m-0 p-0">
+    <header class="bg-[#111A29] fixed top-0 left-0 w-full shadow-md z-50">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-4"
+      >
+        <h1 class="text-2xl font-bold pl-4">NOVA ONE</h1>
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-white focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <nav
+          id="menu"
+          class="hidden fixed top-0 left-0 w-1/2 h-full bg-[#111A29] flex flex-col items-start justify-start px-6 md:static md:flex md:flex-row md:space-x-6 md:h-auto md:w-auto md:bg-transparent"
+        >
+          <ul
+            class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <li>
+              <a
+                href="#vision"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Notre Vision</a
+              >
+            </li>
+            <li>
+              <a
+                href="#robot"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Le Robot</a
+              >
+            </li>
+            <li>
+              <a
+                href="#market"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Marché & Utilité</a
+              >
+            </li>
+            <li>
+              <a
+                href="#technologies"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Technologies Intégrées</a
+              >
+            </li>
+            <li>
+              <a
+                href="#team"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >L'Équipe</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="pt-20">
+      <header class="bg-[#111A29] shadow-md h-auto py-10">
+        <div
+          class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6"
+        >
+          <!-- Texte à gauche -->
+          <div class="text-left md:w-1/2">
+            <h1 class="text-4xl font-bold">NOVA ONE</h1>
+            <p class="mt-4 text-lg text-gray-300">
+              L'innovation au service de tous.
+            </p>
+            <a
+              href="#vision"
+              class="mt-6 inline-block bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gray-600 transition"
+            >
+              Découvrir NOVA ONE
+            </a>
+          </div>
+          <!-- Image à droite -->
+          <div class="md:w-1/2 flex justify-center mt-8 md:mt-0">
+            <div
+              class="bg-gray-800 rounded-lg shadow-lg p-4"
+              data-tilt
+              data-tilt-max="15"
+              data-tilt-speed="400"
+            >
+              <img
+                src="img/robot-removebg-preview.png"
+                alt="Robot NOVA ONE"
+                class="w-64 h-auto object-contain"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="vision" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Notre Vision</h2>
+          <p class="mt-4 text-gray-300">
+            Rendre la technologie accessible à tous, promouvoir l'éducation et
+            accompagner le développement en Afrique.
+          </p>
+        </div>
+      </section>
+
+      <section id="robot" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Le Robot</h2>
+          <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold">Essentiel</h3>
+              <p class="mt-4 text-gray-300">
+                Un modèle simple et efficace pour les besoins du quotidien.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold">Avancé</h3>
+              <p class="mt-4 text-gray-300">
+                Des fonctionnalités supplémentaires pour une expérience
+                enrichie.
+              </p>
+            </div>
+            <div class="p-6 bg-gray-800 rounded-lg shadow-md">
+              <h3 class="text-xl font-semibold">Premium</h3>
+              <p class="mt-4 text-gray-300">
+                Options personnalisables et technologie de pointe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="market" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Marché & Utilité</h2>
+          <p class="mt-4 text-gray-300">
+            Conçu pour les familles, l'éducation et les entreprises. Présent en
+            France et en Afrique (Afrique centrale, du Sud, Côte d’Ivoire).
+          </p>
+        </div>
+      </section>
+
+      <section id="technologies" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Technologies Intégrées</h2>
+          <p class="mt-4 text-gray-300">
+            Capteurs, reconnaissance vocale, IA, interface mobile, etc.
+          </p>
+        </div>
+      </section>
+
+      <section id="roadmap" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Roadmap & Développement</h2>
+          <p class="mt-4 text-gray-300">
+            Suivez les étapes de conception et de lancement de NOVA ONE.
+          </p>
+        </div>
+      </section>
+
+      <section id="team" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">L'Équipe</h2>
+          <p class="mt-4 text-gray-300">
+            Nous sommes deux passionnés avec des rôles complémentaires pour
+            mener ce projet à bien.
+          </p>
+        </div>
+      </section>
+
+      <footer id="contact" class="py-16">
+        <div class="container mx-auto text-center">
+          <h2 class="text-3xl font-bold">Contactez-nous</h2>
+          <form action="#" method="post" class="mt-8 max-w-lg mx-auto">
+            <div class="mb-4">
+              <input
+                type="text"
+                name="name"
+                class="w-full p-4 border border-gray-600 rounded-lg bg-gray-800 text-white placeholder-gray-400"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="email"
+                name="email"
+                class="w-full p-4 border border-gray-600 rounded-lg bg-gray-800 text-white placeholder-gray-400"
+                placeholder="Votre email"
+                required
+              />
+            </div>
+            <div class="mb-4">
+              <textarea
+                name="message"
+                class="w-full p-4 border border-gray-600 rounded-lg bg-gray-800 text-white placeholder-gray-400"
+                rows="4"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-gray-700 text-white py-3 px-6 rounded-lg shadow-md hover:bg-gray-600 transition"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+    </script>
+
+    <script>
+      VanillaTilt.init(document.querySelectorAll(".bg-gray-800"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    </script>
+  </body>
+</html>
