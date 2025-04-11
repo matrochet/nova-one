@@ -85,6 +85,13 @@
           >
             <li>
               <a
+                href="index.html"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
                 href="vision.html"
                 class="text-xl hover:text-gray-400 transition menu-link active"
                 >Notre Vision</a
@@ -145,7 +152,7 @@
           France, puis à travers le monde. Nous construisons une nouvelle
           génération de robots conçus pour accompagner les familles, enrichir
           l’éducation et soutenir les entreprises, tout en restant simples
-          d’utilisation, élégants et personnalisables.
+          d’utilisation et personnalisable.
         </p>
       </section>
 
@@ -216,8 +223,9 @@
     // Vérifiez que les éléments existent avant d'ajouter des événements
     if (menuToggle && menu) {
       // Ajouter un événement de clic pour afficher/masquer le menu
-      menuToggle.addEventListener("click", () => {
+      menuToggle.addEventListener("click", (event) => {
         menu.classList.toggle("hidden");
+        event.stopPropagation(); // Empêche la propagation du clic au document
       });
 
       // Fermer le menu lorsque l'utilisateur clique sur un lien
@@ -226,6 +234,18 @@
         link.addEventListener("click", () => {
           menu.classList.add("hidden");
         });
+      });
+
+      // Fermer le menu lorsque l'utilisateur clique n'importe où sur la page
+      document.addEventListener("click", () => {
+        if (!menu.classList.contains("hidden")) {
+          menu.classList.add("hidden");
+        }
+      });
+
+      // Empêcher la fermeture du menu si l'utilisateur clique à l'intérieur du menu
+      menu.addEventListener("click", (event) => {
+        event.stopPropagation();
       });
     } else {
       console.error("Menu toggle or menu element not found!");

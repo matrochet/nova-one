@@ -36,6 +36,7 @@
       .menu-link.active {
         color: #4a5568; /* Couleur différente pour l'onglet actif */
         font-weight: bold; /* Optionnel : mettre en gras */
+        text-decoration: underline; /* Optionnel : souligner l'onglet actif */
       }
     </style>
   </head>
@@ -72,6 +73,13 @@
           <ul
             class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
           >
+            <li>
+              <a
+                href="index.html"
+                class="text-xl hover:text-gray-400 transition menu-link active"
+                >Accueil</a
+              >
+            </li>
             <li>
               <a
                 href="vision.html"
@@ -160,7 +168,7 @@
           <h2 class="text-3xl font-bold">Notre Vision</h2>
           <p class="mt-4 text-gray-300">
             Rendre la technologie accessible à tous, promouvoir l'éducation et
-            accompagner le développement en Afrique.
+            accompagner le développement de chacun.
           </p>
         </div>
       </section>
@@ -272,19 +280,40 @@
     </main>
 
     <script>
+      // Sélectionner les éléments du DOM
       const menuToggle = document.getElementById("menu-toggle");
       const menu = document.getElementById("menu");
-      const menuLinks = document.querySelectorAll(".menu-link");
 
-      menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("hidden");
-      });
-
-      menuLinks.forEach((link) => {
-        link.addEventListener("click", () => {
-          menu.classList.add("hidden");
+      // Vérifiez que les éléments existent avant d'ajouter des événements
+      if (menuToggle && menu) {
+        // Ajouter un événement de clic pour afficher/masquer le menu
+        menuToggle.addEventListener("click", (event) => {
+          menu.classList.toggle("hidden");
+          event.stopPropagation(); // Empêche la propagation du clic au document
         });
-      });
+
+        // Fermer le menu lorsque l'utilisateur clique sur un lien
+        const menuLinks = document.querySelectorAll(".menu-link");
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            menu.classList.add("hidden");
+          });
+        });
+
+        // Fermer le menu lorsque l'utilisateur clique n'importe où sur la page
+        document.addEventListener("click", () => {
+          if (!menu.classList.contains("hidden")) {
+            menu.classList.add("hidden");
+          }
+        });
+
+        // Empêcher la fermeture du menu si l'utilisateur clique à l'intérieur du menu
+        menu.addEventListener("click", (event) => {
+          event.stopPropagation();
+        });
+      } else {
+        console.error("Menu toggle or menu element not found!");
+      }
     </script>
 
     <script>
@@ -293,6 +322,18 @@
         speed: 400,
         glare: true,
         "max-glare": 0.5,
+      });
+    </script>
+    <script>
+      // Récupérer l'URL actuelle
+      const currentPage = window.location.pathname;
+
+      // Ajouter la classe 'active' au lien correspondant
+      const menuLinks = document.querySelectorAll(".menu-link");
+      menuLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
       });
     </script>
   </body>
