@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez la vision de NOVA ONE, le robot technologique révolutionnaire."
+    />
+    <meta
+      name="keywords"
+      content="NOVA ONE, robot, technologie, startup, IA, éducation, Afrique"
+    />
+    <meta name="author" content="Matthieu" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.3/dist/vanilla-tilt.min.js"></script>
+    <title>La vision de NOVA ONE</title>
+    <style>
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #111a29;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568;
+        border-radius: 4px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #2d3748;
+      }
+
+      .menu-link.active {
+        color: #4a5568; /* Couleur différente pour l'onglet actif */
+        font-weight: bold; /* Optionnel : mettre en gras */
+        text-decoration: underline; /* Optionnel : souligner l'onglet actif */
+      }
+
+      main {
+        margin-top: 80px; /* Adjust this value based on your header height */
+      }
+    </style>
+  </head>
+  <body class="bg-[#111A29] text-white font-sans m-0 p-0">
+    <header class="bg-[#111A29] fixed top-0 left-0 w-full shadow-md z-50">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-4"
+      >
+        <h1 class="text-2xl font-bold pl-4">
+          <a href="index.html">NOVA ONE</a>
+        </h1>
+        <button
+          id="menu-toggle"
+          class="block md:hidden text-white focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <nav
+          id="menu"
+          class="hidden fixed top-0 left-0 w-1/2 h-full bg-[#111A29] flex flex-col items-start justify-start px-6 md:static md:flex md:flex-row md:space-x-6 md:h-auto md:w-auto md:bg-transparent"
+        >
+          <ul
+            class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <li>
+              <a
+                href="vision.html"
+                class="text-xl hover:text-gray-400 transition menu-link active"
+                >Notre Vision</a
+              >
+            </li>
+            <li>
+              <a
+                href="#robot"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Le Robot</a
+              >
+            </li>
+            <li>
+              <a
+                href="#market"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Marché & Utilité</a
+              >
+            </li>
+            <li>
+              <a
+                href="#technologies"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Technologies Intégrées</a
+              >
+            </li>
+            <li>
+              <a
+                href="#team"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >L'Équipe</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="text-xl hover:text-gray-400 transition menu-link"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+      <section class="mb-12">
+        <h2 class="text-2xl font-semibold mb-4">
+          Accélérer l’avenir grâce à la robotique accessible et intelligente.
+        </h2>
+        <p class="mb-6">
+          Chez NOVA ONE, nous croyons que la technologie ne doit pas être un
+          privilège, mais un outil au service de tous.
+        </p>
+        <p class="mb-6">
+          Notre mission est de démocratiser la robotique intelligente, en la
+          rendant utile, éducative et financièrement accessible, d’abord en
+          France, puis à travers le monde. Nous construisons une nouvelle
+          génération de robots conçus pour accompagner les familles, enrichir
+          l’éducation et soutenir les entreprises, tout en restant simples
+          d’utilisation, élégants et personnalisables.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h3 class="text-xl font-semibold mb-4">Ce que nous défendons :</h3>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            Une robotique utile, ancrée dans la réalité du quotidien :
+            apprentissage, assistance, animation, automatisation.
+          </li>
+          <li>
+            Une technologie inclusive, pensée pour tous les âges et tous les
+            milieux, dès le plus jeune âge.
+          </li>
+          <li>
+            Un design intelligent, accessible en plusieurs versions, de
+            l’essentiel au premium, pour répondre aux besoins de chacun.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 class="text-xl font-semibold mb-4">Une vision mondiale</h3>
+        <p class="mb-6">
+          Le projet NOVA ONE démarre en France, notre premier marché de
+          lancement. Mais notre ambition est globale : apporter la robotique là
+          où elle peut avoir le plus d’impact — en Europe, en Afrique, en
+          Amérique Latine et au-delà.
+        </p>
+        <p class="mb-6">
+          Grâce à des partenariats locaux, des adaptations culturelles et une
+          approche éthique de l’IA, nous voulons bâtir un écosystème
+          international, où la robotique devient un moteur d’éducation, de
+          développement et d’innovation durable.
+        </p>
+        <p class="font-bold text-lg">
+          NOVA ONE, c’est plus qu’un robot. C’est une vision du futur.
+          <br />
+          Accessible. Utile. Universelle.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">© 2025 NOVA ONE. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script>
+      // Récupérer l'URL actuelle
+      const currentPage = window.location.pathname;
+
+      // Ajouter la classe 'active' au lien correspondant
+      const menuLinks = document.querySelectorAll(".menu-link");
+      menuLinks.forEach((link) => {
+        if (link.getAttribute("href") === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    </script>
+  </body>
+  <script>
+    // Sélectionner les éléments du DOM
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    // Vérifiez que les éléments existent avant d'ajouter des événements
+    if (menuToggle && menu) {
+      // Ajouter un événement de clic pour afficher/masquer le menu
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+
+      // Fermer le menu lorsque l'utilisateur clique sur un lien
+      const menuLinks = document.querySelectorAll(".menu-link");
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+    } else {
+      console.error("Menu toggle or menu element not found!");
+    }
+  </script>
+</html>
